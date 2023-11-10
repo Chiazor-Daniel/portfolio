@@ -154,7 +154,35 @@ section .header{
     font-size: 2.25rem;
     font-weight: 600;
 }
-
+.skills{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    color: white;
+}
+.skills .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+}
+.skills .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+.skills .card img{
+    height: 40px;
+    width: 40px;
+}
 .features{
     margin-top: 4rem;
     display: grid;
@@ -371,7 +399,7 @@ footer .column > a:hover{
         display: none;
     }
 
-    .features{
+    .features, .skills{
         grid-template-columns: repeat(1, 1fr);
     }
 
